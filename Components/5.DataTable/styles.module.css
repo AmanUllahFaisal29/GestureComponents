@@ -1,0 +1,95 @@
+.ssearchContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  font-family: "Outfit", sans-serif;
+  font-size: 8px;
+  border-radius: 8px;
+  background-color: #f3f3f3;
+}
+
+.ssearchResults {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  overflow-y: hidden;
+  width: 100%;
+  background-color: rgb(232, 232, 232);
+  border-radius: 0px 0px 8px 8px;
+}
+
+.ssearchResults li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.ssearchResults li:last-child {
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+.sitemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.sname {
+  font-size: 1.9em;
+  font-weight: 400;
+  color: #282828;
+}
+
+.sprice {
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #545454;
+  padding-right: 8px;
+}
+
+.ssearchResults li:hover {
+  background-color: rgb(225, 225, 225);
+  cursor: pointer;
+}
+
+.srecommended {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.srecommendedIcon {
+  width: 23px;
+  height: 23px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.srecommendedTitle {
+  font-size: 2.1em;
+  color: #282828;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.ssearchResults li::before {
+  content: attr(data-index);
+  counter-increment: list-counter;
+}
+
+.listNumber {
+  font-size: 1.8em;
+  font-weight: 500;
+  color: #282828;
+  margin-right: 13px;
+  padding-left: 3px;
+}

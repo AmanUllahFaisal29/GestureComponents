@@ -1,0 +1,121 @@
+.searchContainer {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Outfit", sans-serif;
+  z-index: 1000;
+}
+
+.searchContainer input:focus {
+  outline: none;
+}
+
+.searchContainer input::placeholder {
+  color: #bbbbbb;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 1.0em;
+}
+
+.searchContainer input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  padding-left: 47px;
+  border-radius: 7px;
+  background-color: #f3f3f3;
+  border: none;
+  display: flex;
+}
+
+.searchContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchResults {
+  position: absolute;
+  top: calc(100% + 0px);
+  padding: 0;
+  margin: 0;
+  border-radius: 7px;
+  max-height: 900px;
+  overflow-y: auto;
+  width: 100%;
+  background-color: #f3f3f3;
+  z-index: 1;
+  height: max-content;
+}
+
+.searchResults li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.searchResults li:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 8px;
+}
+
+.itemInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+
+.name {
+  font-size: 0.8em;
+  color: #515151;
+  font-weight: 400;
+}
+
+.searchPrice {
+  font-size: 0.7em;
+  font-weight: 400;
+  color: #545454;
+  padding-right: 10px;
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 14px;
+  width: 23px;
+  height: 23px;
+  top: 10px;
+}
+
+.searchResults::-webkit-scrollbar {
+  width: 5px;
+}
+.searchResults::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+}
+.searchResults::-webkit-scrollbar-thumb {
+  background: #ffffff;
+}
+
+.searchResults li:hover {
+  background-color: rgb(225, 225, 225);
+  cursor: pointer;
+}
+
