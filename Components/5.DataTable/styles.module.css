@@ -42,7 +42,7 @@
 .sname {
   font-size: 1.9em;
   font-weight: 400;
-  color: #282828;
+  color: #515151;
 }
 
 .sprice {
@@ -73,7 +73,7 @@
 
 .srecommendedTitle {
   font-size: 2.1em;
-  color: #282828;
+  color: #515151;
   font-family: Outfit;
   font-style: normal;
   font-weight: 400;
@@ -89,7 +89,7 @@
 .listNumber {
   font-size: 1.8em;
   font-weight: 500;
-  color: #282828;
+  color: #515151;
   margin-right: 13px;
   padding-left: 3px;
 }

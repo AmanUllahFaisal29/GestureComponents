@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
-import styles from './styles.module.css';
-import DropLogo from '../../Assets/SVGs/Drop.svg';
-import DropWhiteLogo from '../../Assets/SVGs/DropWhite.svg';
+import React, { useState, useEffect, useRef } from "react";
+import styles from "./styles.module.css";
+import DropLogo from "../../Assets/SVGs/Drop.svg";
+import DropWhiteLogo from "../../Assets/SVGs/DropWhite.svg";
 
 const Dropdown = ({ options, onOptionSelect, selectedOption }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,15 +15,17 @@ const Dropdown = ({ options, onOptionSelect, selectedOption }) => {
       }
     };
 
-    document.addEventListener('click', handleClickOutside);
+    document.addEventListener("click", handleClickOutside);
 
     return () => {
-      document.removeEventListener('click', handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, []);
 
   const logo = selectedOption ? DropWhiteLogo : DropLogo;
-  const headerStyles = selectedOption ? { backgroundColor: '#3692FF', color: '#fff' } : {};
+  const headerStyles = selectedOption
+    ? { backgroundColor: "rgb(225, 225, 225)", color: "#515151" }
+    : {};
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -41,7 +43,7 @@ const Dropdown = ({ options, onOptionSelect, selectedOption }) => {
         onClick={handleToggle}
         style={headerStyles}
       >
-        {selectedOption || 'Choose your desired option'}
+        {selectedOption || "Choose your desired option"}
         <img src={logo} className={styles.dropdownLogo} alt="drop" />
       </div>
       {isOpen && (
@@ -50,7 +52,9 @@ const Dropdown = ({ options, onOptionSelect, selectedOption }) => {
             {options.map((option, index) => (
               <li
                 key={index}
-                className={`${styles.dropdownListItem} ${selectedOption === option ? styles.selected : ''}`}
+                className={`${styles.dropdownListItem} ${
+                  selectedOption === option ? styles.selected : ""
+                }`}
                 onClick={() => handleOptionClick(option)}
               >
                 {option}
