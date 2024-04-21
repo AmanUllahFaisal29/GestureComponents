@@ -10,6 +10,7 @@ We have a small range of 5 components:
 
 # Installation Process
 Getting started with Gesture Components is straightforward. Follow these steps to integrate the library into your React project:
+
 1.Clone the Repository:
 Clone the Gesture Components repository to your local machine:
 
