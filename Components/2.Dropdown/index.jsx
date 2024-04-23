@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./styles.module.css";
-import DropLogo from "../../Assets/SVGs/Drop.svg";
-import DropWhiteLogo from "../../Assets/SVGs/DropWhite.svg";
+import DropIcon from "@material-ui/icons/ExpandMoreRounded";
 
 const Dropdown = ({ options, onOptionSelect, selectedOption }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +21,8 @@ const Dropdown = ({ options, onOptionSelect, selectedOption }) => {
     };
   }, []);
 
-  const logo = selectedOption ? DropWhiteLogo : DropLogo;
   const headerStyles = selectedOption
-    ? { backgroundColor: "rgb(225, 225, 225)", color: "#515151" }
+    ? { backgroundColor: "#f5f5f5", color: "#515151" }
     : {};
 
   const handleToggle = () => {
@@ -44,7 +42,7 @@ const Dropdown = ({ options, onOptionSelect, selectedOption }) => {
         style={headerStyles}
       >
         {selectedOption || "Choose your desired option"}
-        <img src={logo} className={styles.dropdownLogo} alt="drop" />
+        <DropIcon style={{ width: "24px", height: "24px" }} />
       </div>
       {isOpen && (
         <div className={styles.dropdownListContainer}>

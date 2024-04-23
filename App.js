@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className="App-header">
-      <h1>Components</h1>
+      <h1>Gesture Components</h1>
     <h2>1. Button</h2>
     <Button text="Click me" onClick={handleFeedbackClick} />
 

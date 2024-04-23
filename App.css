@@ -1,10 +1,9 @@
-
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #dedede;
+  background-color: #d2d2d2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,17 +14,17 @@
 }
 
 h1 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 500;
 }
 
 h2 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
 }
 
 h3 {
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 300;
   margin-top: 0px;
   margin-bottom: 0px;

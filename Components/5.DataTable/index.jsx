@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 import SearchIcon from "@material-ui/icons/TableChartOutlined";
+import DropIcon from "@material-ui/icons/ExpandMoreRounded";
 
 const Table = ({ data }) => {
   return (
@@ -8,7 +9,7 @@ const Table = ({ data }) => {
       <div className={styles.srecommended}>
         <SearchIcon
           className={styles.srecommendedIcon}
-          style={{ color: "#282828" }}
+          style={{ color: "#545454" }}
         />
         <div className={styles.srecommendedTitle}>Table Data</div>
       </div>
