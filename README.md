@@ -7,6 +7,7 @@ We have a small range of 5 components:
 3) Feedback Form
 4) Searchbar
 5) Data Table
+6) Input Field [Coming Soon]
 
 # Installation Process
 Getting started with Gesture Components is straightforward. Follow these steps to integrate the library into your React project:
